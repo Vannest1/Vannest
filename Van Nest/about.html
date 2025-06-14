@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Van Nest</title>
+  <link rel="stylesheet" href="vans-style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="vannest-logo.png" alt="Van Nest Logo" class="logo" />
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vans.html">Vans</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="shipping.html">Shipping</a></li>
+      <li><a href="contact.html" class="contact-btn">Quick Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>About Van Nest</h1>
+  <p class="tagline">Driving Value, One Van at a Time</p>
+  <p>Van Nest brings together trusted sellers from across Europe to provide quality used vans at fair prices. Our platform makes it easy for businesses and individuals to find reliable vehicles for work, travel, and logistics.</p>
+  <p>Each listing is reviewed and verified to ensure a smooth and honest experience. With partners and suppliers in the UK, Germany, the Netherlands, France, and Poland, we help you find your next van with confidence.</p>
+
+  <h2>Our Mission</h2>
+  <p>To make dependable, affordable vans accessible to individuals and businesses across Europe through transparency, trust, and top-tier service.</p>
+
+  <h2>Our Vision</h2>
+  <p>To be the most reliable van dealership network across the region — where quality meets service and people drive away happy.</p>
+
+  <h2>Customer Testimonials</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>"I ordered from Berlin and the Renault was delivered on time and in great shape. Will definitely return." — <strong>Andreas M. (Germany)</strong></p>
+    </div>
+    <div class="testimonial-card">
+      <p>"We’re a small transport team in Amsterdam and now use 3 vans from Van Nest. Fast shipping and honest pricing." — <strong>Eva B. (Netherlands)</strong></p>
+    </div>
+    <div class="testimonial-card">
+      <p>"I thought buying a used van from another country would be complicated. It wasn’t. Thank you!" — <strong>Luc D. (France)</strong></p>
+    </div>
+    <div class="testimonial-card">
+      <p>"Easy process, helpful communication, and a solid van. Respect from Warsaw!" — <strong>Kamil T. (Poland)</strong></p>
+    </div>
+    <div class="testimonial-card">
+      <p>"Reliable service and no surprises. Got what was promised. We’ll be buying again soon." — <strong>Stephen R. (UK)</strong></p>
+    </div>
+  </div>
+
+  <h2>Share Your Experience</h2>
+  <p>Have you purchased a van through Van Nest? We’d love to hear your feedback.</p>
+
+  <form id="testimonialForm" onsubmit="return handleSubmit()">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email (optional):</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="message">Your Testimonial:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <button type="submit">Submit</button>
+    <p id="thankYouMsg" style="display: none; color: green; font-weight: bold;">Thanks for your feedback!</p>
+  </form>
+</main>
+
+<footer style="background-color: #0a3d62; color: white; text-align: center; padding: 20px; font-size: 14px;">
+  <p>
+    &copy; 2025 Van Nest. All rights reserved. |
+    <a href="terms.html" style="color: #00aaff; text-decoration: underline; font-weight: bold;">Terms</a> |
+    <a href="privacy.html" style="color: #00aaff; text-decoration: underline; font-weight: bold;">Privacy</a>
+  </p>
+</footer>
+
+
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+
+  function handleSubmit() {
+    document.getElementById("testimonialForm").reset();
+    document.getElementById("thankYouMsg").style.display = "block";
+    return false;
+  }
+
+</script>
+
+</body>
+</html>
