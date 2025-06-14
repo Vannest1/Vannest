@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You - Van Nest</title>
+  <link rel="stylesheet" href="vans-style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="vannest-logo.png" alt="Van Nest Logo" class="logo" />
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vans.html">Vans</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="shipping.html">Shipping</a></li>
+        <li><a href="contact.html" class="contact-btn">Quick Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content-box">
+    <h1>Thank You!</h1>
+    <p>We appreciate your message. A member of our team will get back to you as soon as possible.</p>
+    <p><a href="index.html" class="browse-btn" style="margin-top: 20px; display: inline-block;">← Return to Home</a></p>
+  </main>
+
+  <footer style="background-color: #0a3d62; color: white; text-align: center; padding: 20px; font-size: 14px;">
+  <p>
+    &copy; 2025 Van Nest. All rights reserved. |
+    <a href="terms.html" style="color: #00aaff; text-decoration: underline; font-weight: bold;">Terms</a> |
+    <a href="privacy.html" style="color: #00aaff; text-decoration: underline; font-weight: bold;">Privacy</a>
+  </p>
+</footer>
+
+
+
+  <button id="backToTopBtn" title="Back to Top">↑</button>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+
+    document.getElementById("backToTopBtn").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    window.addEventListener("scroll", () => {
+      document.getElementById("backToTopBtn").style.display = window.scrollY > 200 ? "flex" : "none";
+    });
+  </script>
+
+</body>
+</html>
