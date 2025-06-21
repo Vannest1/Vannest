@@ -137,23 +137,7 @@ footer {
 }
 
 /* BACK TO TOP BUTTON */
-#backToTopBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: #004080;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  font-size: 20px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  cursor: pointer;
-}
+
 #backToTopBtn:hover {
   background: #002855;
 }
