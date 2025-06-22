@@ -3,21 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Van Listings - Van Nest</title>
+
+  <title>Used Vans for Sale | Van Nest Listings</title>
+  <meta name="description" content="Browse reliable, fully-inspected used vans at affordable prices. Explore Volkswagen, Ford, Mercedes, Renault, and more at Van Nest." />
+  <meta name="keywords" content="used vans, vans for sale, affordable vans, commercial vans, Volkswagen Transporter, Ford Transit, Renault Trafic, Mercedes Sprinter, Van Nest" />
+  <meta name="author" content="Van Nest" />
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:title" content="Used Vans for Sale | Van Nest Listings" />
+  <meta property="og:description" content="Shop affordable, road-ready used vans. Nationwide shipping and secure purchase at Van Nest." />
+  <meta property="og:image" content="https://vannest.store/images/vannest-logo.png" />
+  <meta property="og:url" content="https://vannest.store/vans.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (optional if you have one) -->
+  <link rel="icon" href="images/vannest-logo.png" type="image/png" />
+
   <link rel="stylesheet" href="vans-style.css" />
-  
 </head>
+
 <body>
 
 <header>
   <div class="header-container">
-    <img src="vannest-logo.png" alt="Van Nest Logo" class="logo" />
+    <img src="vannest-logo.png" alt="Van Nest Used Van Dealer Logo" class="logo" />
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   </div>
   <nav>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
-      <li><a href="vans.html">Vans</a></li>
+      <li><a href="vans.html" aria-current="page">Vans</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="shipping.html">Shipping</a></li>
       <li><a href="contact.html" class="contact-btn">Quick Contact</a></li>
@@ -25,15 +40,11 @@
   </nav>
 </header>
 
+<section class="featured-vans">
+  <h1>Browse Used Vans for Sale</h1>
+  <p>All our vans are fully inspected and priced competitively. Find your next vehicle below:</p>
+  <div class="van-grid">
 
-
-
-
-
-
-  <section class="featured-vans">
-    <h2>Available Vans</h2>
-    <div class="van-grid">
 
       <div class="van-card">
   <h3>Volkswagen Transporter T6</h3>
@@ -221,7 +232,8 @@
     </div>
   </section>
 
-  <footer style="background-color: #0a3d62; color: white; text-align: center; padding: 20px; font-size: 14px;">
+ <!-- Footer -->
+<footer style="background-color: #0a3d62; color: white; text-align: center; padding: 20px; font-size: 14px;">
   <p>
     &copy; 2025 Van Nest. All rights reserved. |
     <a href="terms.html" style="color: #00aaff; text-decoration: underline; font-weight: bold;">Terms</a> |
@@ -229,7 +241,7 @@
   </p>
 </footer>
 
-
+<!-- JavaScript -->
 <script>
   function changeImage(mainImageId, newSrc) {
     document.getElementById(mainImageId).src = newSrc;
@@ -239,8 +251,11 @@
     const nav = document.getElementById("navLinks");
     nav.classList.toggle("show");
   }
-
 </script>
+
+<!-- Live Chat (Tidio) -->
 <script src="//code.tidio.co/86cvueq2b4w83kcgar891bp2wywedswv.js" async></script>
 </body>
+</html>
+
 </html>
