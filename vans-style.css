@@ -435,3 +435,12 @@ form button:hover {
   color: #004080;
   margin-bottom: 15px;
 }
+footer a {
+  color: #ffffff; /* bright white */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #00ccff; /* light blue on hover */
+}
